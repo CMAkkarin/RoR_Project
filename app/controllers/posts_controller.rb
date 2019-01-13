@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+    http_basic_authenticate_with name: "Casper", password: "1234", except: [:index, :show]
+    
     def index
         @posts = Post.all
     end
@@ -12,7 +14,6 @@ class PostsController < ApplicationController
     end
 
     def create
-        #render plain: params[:post].inspect
         @post = Post.new(post_params)
 
         if(@post.save)
