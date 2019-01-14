@@ -13,20 +13,21 @@
 
   <body>
 
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-inverse">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="true" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><span><img alt="Brand" src="https://i1.wp.com/www.grupodigital.eu/wp-content/uploads/2017/02/letra-A.png" width="30"></span> AutoMoto Blog</a>
+      <a class="navbar-brand" href="#"><span><img alt="Brand" src="https://i1.wp.com/www.grupodigital.eu/wp-content/uploads/2017/02/letra-A.png" width="30"></span>  AutoMoto Blog</a>
     </div>
-    <div id="navbar" class="collapse navbar-collapse">
+    <div id="myNavbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li><%= link_to "Home", home_path %></li>
+        <li><a href="#">Advertise</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Create Post", new_post_path %></li>
